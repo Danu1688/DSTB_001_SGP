@@ -38,9 +38,35 @@ proxies:
     path: /trojan-ws
     headers:
       Host: dstb.cloud
+- name: SvrDSTB_DO_UnliTurbo_IP3
+  type: trojan
+  server: 104.18.61.93
+  port: 443
+  password: 8ea3c1a3-6e46-4736-b692-a82df9c404b9
+  udp: true
+  sni: dstb.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: dstb.cloud
 - name: SvrDSTB_DO_UnliTurbo_H1
   type: trojan
   server: cvs-deo.shopeemobile.com
+  port: 443
+  password: 8ea3c1a3-6e46-4736-b692-a82df9c404b9
+  udp: true
+  sni: dstb.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: dstb.cloud
+- name: SvrDSTB_DO_UnliTurbo_H2
+  type: trojan
+  server: dl.cvs.freefiremobile.com
   port: 443
   password: 8ea3c1a3-6e46-4736-b692-a82df9c404b9
   udp: true
